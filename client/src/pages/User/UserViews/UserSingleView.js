@@ -5,4 +5,3 @@ import { useUserView } from '../UserHooks';
 //  const { selectedUser } = useUserView();
 
   return <h1>Single User View</h1>;
-};
