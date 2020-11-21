@@ -4,8 +4,7 @@ import Paper from '@material-ui/core/Paper';
 import Box from '@material-ui/core/Box';
 import Typography from "@material-ui/core/Typography";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import Card from "@material-ui/core/Card";
-import { palette } from '@material-ui/system';
+
 
 
 import {useLoginView, useFetchLogins, useBreachPull} from '../LoginHooks';
@@ -26,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
 
 export const LoginSingleView = () => {
     const classes = useStyles();
-    const {logins} = useFetchLogins();
+    //const {logins} = useFetchLogins();
     const {selectedLogin} = useLoginView();
     const {isBreached} = useBreachPull();
     // console.log('IS BREACHED?????', isBreached);

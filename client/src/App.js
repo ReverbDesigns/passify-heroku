@@ -6,15 +6,15 @@ import Navbar from './pages/common/components/Navbar';
 import {WrappedSaveLogin} from "./pages/Login/LoginViews/SaveLogin";
 import Drawer from '@material-ui/core/Drawer';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import Toolbar from '@material-ui/core/Toolbar';
-import Autocomplete from '@material-ui/lab/Autocomplete';
+
+
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
 import {
     WrappedSignUp,
     WrappedSignIn,
 } from './pages/Viewer';
-import {useSelector} from "react-redux";
+
 import {LoginListView} from "./pages/Login/LoginViews";
 import {LoginContainer} from "./pages/Login";
 export const theme = createMuiTheme({

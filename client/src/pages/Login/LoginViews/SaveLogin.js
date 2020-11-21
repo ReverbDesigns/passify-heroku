@@ -1,20 +1,20 @@
 import React from 'react';
 import {makeStyles} from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-import {Link, useHistory} from 'react-router-dom';
 
 
-import {useSelector, useDispatch, getState} from 'react-redux';
-import {setViewerToken, getViewerToken} from '../../Viewer';
+
+import {useSelector} from 'react-redux';
+
 import TextField from "@material-ui/core/TextField";
-import {TextFieldInput, WebInput, PassInput} from "../../common/components/TextFieldInput";
-import Input from '@material-ui/core/Input';
+import {TextFieldInput, PassInput} from "../../common/components/TextFieldInput";
+
 import { reduxForm, Field } from 'redux-form';
 import axios from "axios";
 import Chip from '@material-ui/core/Chip';
 import Autocomplete from '@material-ui/lab/Autocomplete';
 import { createMuiTheme } from '@material-ui/core/styles';
-import { ThemeProvider } from '@material-ui/styles';
+
  const theme = createMuiTheme({
   palette: {
     primary: {
