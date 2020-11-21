@@ -1,3 +1,5 @@
+
+
 USE heroku_15f4e973efa4e84;
 
 CREATE TABLE users (
@@ -17,3 +19,4 @@ CREATE TABLE logins (
     userId INT references users(id),
     PRIMARY KEY (id)
 )
+

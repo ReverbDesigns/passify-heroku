@@ -20,15 +20,11 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
   },
-  appBar: {
-    backgroundColor: '#7269EF'
-  }
 }));
 
 export default function ButtonAppBar() {
   const classes = useStyles();
   const { token } = useSelector(state => state.viewer);
-
   const dispatch = useDispatch();
   const history = useHistory();
 
@@ -40,13 +36,13 @@ export default function ButtonAppBar() {
 
   return (
     <div className={classes.root}>
-      <AppBar className={classes.appBar} position="static">
+      <AppBar position="static">
         <Toolbar>
           <Button
             component={Link}
             to='/'
             color="inherit">
-            Passify your Account
+            Test an Account
           </Button>
 
           {
